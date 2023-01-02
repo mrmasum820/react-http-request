@@ -32,7 +32,49 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* my styles */
+section {
+  display: grid;
+}
+
+.card {
+  background-color: #282c34;
+  color: white;
+  padding: .5rem;
+  margin: .5rem;
+}
+
+.btn {
+  margin: 0px 5px;
+  padding: 3px 7px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: orange;
+}
+
+input {
+  padding: .5rem;
+  margin: .5rem;
+  width: 20rem;
+}
+
+
+@media screen and (min-width: 600px) {
+  section {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    grid-template-columns: auto auto auto;
   }
 }
